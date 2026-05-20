@@ -1,3 +1,15 @@
+# STRATUM
+
+The operating layer beneath your business.
+
+Personalised AI Operating Systems for solo operators — custom Claude Code workspaces tuned to how you actually run your business.
+
+**Live:** https://stratum-three.vercel.app
+**Tiers:** Lite $1,500 · Operator $4,500 + $1K/mo · Studio $15,000
+**Stack:** Next.js 16 · React 19 · Tailwind v4 · Framer Motion 12 · Turbopack
+
+---
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
