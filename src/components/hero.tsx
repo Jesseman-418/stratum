@@ -76,10 +76,21 @@ export function Hero() {
             </span>
           </a>
           <a
+            href="https://calendly.com/njessemandevamirtham/stratum-discovery-call"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center justify-center gap-3 border border-accent text-accent text-mono text-xs tracking-[0.18em] uppercase px-6 py-4 hover:bg-accent hover:text-background transition-colors"
+          >
+            Book a 15-min call
+            <span className="transition-transform group-hover:translate-x-1">
+              →
+            </span>
+          </a>
+          <a
             href="#tiers"
             className="inline-flex items-center justify-center gap-3 border border-border text-mono text-xs tracking-[0.18em] uppercase px-6 py-4 hover:border-accent hover:text-accent transition-colors"
           >
-            View the three tiers
+            View tiers
           </a>
         </motion.div>
 

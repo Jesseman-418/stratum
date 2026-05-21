@@ -34,9 +34,14 @@ export function Footer() {
             <Link href="/#process" className="text-sm hover:text-accent transition-colors">
               Process
             </Link>
-            <Link href="/ghostwriting" className="text-sm hover:text-accent transition-colors">
-              Ghostwriting
-            </Link>
+            <a
+              href="https://stratum-content.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm hover:text-accent transition-colors"
+            >
+              Stratum Content →
+            </a>
           </div>
 
           <div className="md:col-span-4 flex flex-col gap-3">
