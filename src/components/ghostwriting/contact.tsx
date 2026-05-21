@@ -55,6 +55,18 @@ export function GhostContact() {
                 Personal reply, signed Jesseman.
               </p>
             </div>
+            <div>
+              <p className="label mb-2">Or skip the form</p>
+              <a
+                href="https://calendly.com/njessemandevamirtham/stratum-discovery-call"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center gap-2 text-mono text-sm border-b border-foreground/30 pb-1 hover:border-accent hover:text-accent transition-colors"
+              >
+                Book a 15-min call
+                <span className="transition-transform group-hover:translate-x-1">→</span>
+              </a>
+            </div>
             <div className="hairline-top pt-8 mt-auto">
               <p className="label mb-2">Not a fit if</p>
               <ul className="text-sm text-muted leading-relaxed flex flex-col gap-1">
