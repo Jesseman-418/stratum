@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export function GhostAiosBridge() {
   return (
@@ -59,7 +60,7 @@ export function GhostAiosBridge() {
                 Want the operating layer that runs your ghostwriting installed
                 inside <em>your</em> business?
               </p>
-              <a
+              <Link
                 href="/"
                 className="group inline-flex items-center justify-center gap-3 border border-border text-mono text-xs tracking-[0.18em] uppercase px-6 py-4 hover:border-accent hover:text-accent transition-colors"
               >
@@ -67,7 +68,7 @@ export function GhostAiosBridge() {
                 <span className="transition-transform group-hover:translate-x-1">
                   →
                 </span>
-              </a>
+              </Link>
             </div>
           </motion.div>
         </div>

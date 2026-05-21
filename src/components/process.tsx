@@ -26,7 +26,7 @@ const steps = [
     code: "04",
     name: "Hand-off",
     duration: "Day 12–14",
-    body: "Live walkthrough. Recorded onboarding loom. 30-day Slack/email line for tuning. Your operating layer is live and you know how to extend it yourself.",
+    body: "Live walkthrough. Recorded onboarding loom. 30-day email line for tuning. Your operating layer is live and you know how to extend it yourself.",
   },
 ];
 

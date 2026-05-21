@@ -13,8 +13,8 @@ const metrics = [
 const log = [
   "06:42 · /log-weight → daily-log.md updated",
   "07:30 · /daily-brief → 3 priorities surfaced",
-  "09:12 · ghostwriting retainer DM drafted ×4",
-  "11:05 · Claude for Chrome research agent → 12 prospects",
+  "09:12 · /quick-prospect → DM drafted in client voice",
+  "11:05 · /ghost → 4 posts drafted, edit pass queued",
   "14:38 · /implement → Stratum landing site shipped",
   "19:00 · cloud routine → Sunday macro recompute scheduled",
 ];
@@ -52,12 +52,12 @@ export function CaseStudy() {
             </div>
 
             <h3 className="text-3xl md:text-5xl font-medium tracking-[-0.02em] leading-[1.05]">
-              One workspace runs two stacked offers and a
-              90-day body protocol — without a SaaS subscription in sight.
+              One workspace runs a ghostwriting service across three tiers
+              and a 90-day body protocol — without a SaaS subscription in sight.
             </h3>
 
             <p className="text-muted leading-relaxed max-w-2xl">
-              Ghostwriting retainer ops, three Chrome research agents,
+              Prospect dossiers, voice-trained drafts, sample rewrites,
               Indian macro framework, six-day lift plan, daily logs, and a
               caveman output style — all governed by a single CLAUDE.md and
               twenty-three slash commands. Every input compounds into the

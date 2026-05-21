@@ -55,7 +55,7 @@ export function Hero() {
         >
           Stratum engineers personalized AI operating systems for solo
           operators — custom Claude Code workspaces tuned to how you
-          actually run your business. Skills. Commands. Hooks. Agents.
+          actually run your business. Skills. Commands. Hooks. MCP wiring.
           Quiet leverage that compounds daily.
         </motion.p>
 
@@ -93,7 +93,7 @@ export function Hero() {
           {[
             ["03", "Tiers"],
             ["14d", "Avg. build"],
-            ["6", "Live agents"],
+            ["16", "Active skills"],
             ["∞", "Compounding"],
           ].map(([n, l]) => (
             <div

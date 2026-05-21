@@ -1,11 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState, useTransition } from "react";
 import { SectionHeader } from "./section-header";
+import { sendContact } from "@/lib/actions";
 
 export function Contact() {
   const [sent, setSent] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [isPending, startTransition] = useTransition();
 
   return (
     <section id="contact" className="hairline-top py-28 md:py-40 px-6 lg:px-10 bg-surface">
@@ -89,7 +92,20 @@ export function Contact() {
               <form
                 onSubmit={(e) => {
                   e.preventDefault();
-                  setSent(true);
+                  setError(null);
+                  const data = new FormData(e.currentTarget);
+                  startTransition(async () => {
+                    const res = await sendContact({
+                      source: "aios",
+                      name: String(data.get("name") ?? ""),
+                      email: String(data.get("email") ?? ""),
+                      role: String(data.get("role") ?? ""),
+                      tier: String(data.get("tier") ?? ""),
+                      loop: String(data.get("loop") ?? ""),
+                    });
+                    if (res.ok) setSent(true);
+                    else setError(res.error);
+                  });
                 }}
                 className="flex flex-col gap-8"
               >
@@ -121,13 +137,16 @@ export function Contact() {
 
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6 hairline-top pt-8">
                   <span className="text-mono text-[11px] tracking-[0.18em] uppercase text-muted">
-                    No funnel. No drip. One human reply.
+                    {error
+                      ? `Error: ${error}`
+                      : "No funnel. No drip. One human reply."}
                   </span>
                   <button
                     type="submit"
-                    className="group inline-flex items-center justify-center gap-3 bg-foreground text-background text-mono text-xs tracking-[0.18em] uppercase px-7 py-4 hover:bg-accent transition-colors"
+                    disabled={isPending}
+                    className="group inline-flex items-center justify-center gap-3 bg-foreground text-background text-mono text-xs tracking-[0.18em] uppercase px-7 py-4 hover:bg-accent transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    Send the signal
+                    {isPending ? "Sending…" : "Send the signal"}
                     <span className="transition-transform group-hover:translate-x-1">→</span>
                   </button>
                 </div>

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export function Footer() {
   return (
     <footer className="hairline-top px-6 lg:px-10 py-14 bg-background">
@@ -20,18 +22,21 @@ export function Footer() {
 
           <div className="md:col-span-3 flex flex-col gap-3">
             <span className="label">Studio</span>
-            <a href="#tiers" className="text-sm hover:text-accent transition-colors">
+            <Link href="/#tiers" className="text-sm hover:text-accent transition-colors">
               Tiers
-            </a>
-            <a href="#system" className="text-sm hover:text-accent transition-colors">
+            </Link>
+            <Link href="/#system" className="text-sm hover:text-accent transition-colors">
               System
-            </a>
-            <a href="#case" className="text-sm hover:text-accent transition-colors">
+            </Link>
+            <Link href="/#case" className="text-sm hover:text-accent transition-colors">
               Case study
-            </a>
-            <a href="#process" className="text-sm hover:text-accent transition-colors">
+            </Link>
+            <Link href="/#process" className="text-sm hover:text-accent transition-colors">
               Process
-            </a>
+            </Link>
+            <Link href="/ghostwriting" className="text-sm hover:text-accent transition-colors">
+              Ghostwriting
+            </Link>
           </div>
 
           <div className="md:col-span-4 flex flex-col gap-3">

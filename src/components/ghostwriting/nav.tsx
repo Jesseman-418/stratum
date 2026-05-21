@@ -1,11 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
-const links = [
+const links: { label: string; href: string; external?: boolean }[] = [
   { label: "How", href: "#how" },
   { label: "Tiers", href: "#tiers" },
-  { label: "Studio", href: "/" },
+  { label: "Studio", href: "/", external: true },
   { label: "Initiate", href: "#contact" },
 ];
 
@@ -30,15 +31,25 @@ export function GhostNav() {
           </span>
         </a>
         <nav className="hidden md:flex items-center gap-7">
-          {links.map((l) => (
-            <a
-              key={l.href}
-              href={l.href}
-              className="text-mono text-[11px] tracking-[0.18em] uppercase text-muted hover:text-foreground transition-colors"
-            >
-              {l.label}
-            </a>
-          ))}
+          {links.map((l) =>
+            l.external ? (
+              <Link
+                key={l.href}
+                href={l.href}
+                className="text-mono text-[11px] tracking-[0.18em] uppercase text-muted hover:text-foreground transition-colors"
+              >
+                {l.label}
+              </Link>
+            ) : (
+              <a
+                key={l.href}
+                href={l.href}
+                className="text-mono text-[11px] tracking-[0.18em] uppercase text-muted hover:text-foreground transition-colors"
+              >
+                {l.label}
+              </a>
+            )
+          )}
         </nav>
         <a
           href="#contact"
