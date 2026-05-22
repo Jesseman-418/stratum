@@ -7,15 +7,15 @@ const metrics = [
   { value: "23", label: "Slash commands" },
   { value: "16", label: "Active skills" },
   { value: "6", label: "MCP servers" },
-  { value: "2", label: "Domains (Business + Health)" },
+  { value: "2", label: "Operating domains" },
 ];
 
 const log = [
   "06:42 · /log-weight → daily-log.md updated",
   "07:30 · /daily-brief → 3 priorities surfaced",
-  "09:12 · /quick-prospect → DM drafted in client voice",
-  "11:05 · /ghost → 4 posts drafted, edit pass queued",
-  "14:38 · /implement → Stratum landing site shipped",
+  "09:12 · /quick-prospect → research dossier compiled",
+  "11:05 · /implement → site update shipped to prod",
+  "14:38 · /report → weekly metrics rolled up",
   "19:00 · cloud routine → Sunday macro recompute scheduled",
 ];
 
@@ -52,14 +52,14 @@ export function CaseStudy() {
             </div>
 
             <h3 className="text-3xl md:text-5xl font-medium tracking-[-0.02em] leading-[1.05]">
-              One workspace runs a ghostwriting service across three tiers
-              and a 90-day body protocol — without a SaaS subscription in sight.
+              One workspace runs an entire business and a 90-day body
+              protocol — without a SaaS subscription in sight.
             </h3>
 
             <p className="text-muted leading-relaxed max-w-2xl">
-              Prospect dossiers, voice-trained drafts, sample rewrites,
-              Indian macro framework, six-day lift plan, daily logs, and a
-              caveman output style — all governed by a single CLAUDE.md and
+              Prospect dossiers, research synthesis, sales workflows, Indian
+              macro framework, six-day lift plan, daily logs, and a caveman
+              output style — all governed by a single CLAUDE.md and
               twenty-three slash commands. Every input compounds into the
               next morning&apos;s brief.
             </p>
@@ -78,7 +78,7 @@ export function CaseStudy() {
             <div className="hairline-top pt-6">
               <p className="label mb-3">Outcome</p>
               <p className="text-base md:text-lg leading-relaxed max-w-2xl">
-                Two-hour ops loop instead of eight. Founder content auto-logs
+                Two-hour ops loop instead of eight. Operator inputs auto-log
                 to a case-study library. Health and business share one source
                 of truth. The studio runs as proof.
               </p>

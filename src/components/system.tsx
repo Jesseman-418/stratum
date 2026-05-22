@@ -12,7 +12,7 @@ const pillars = [
   {
     code: "02",
     name: "Slash Commands",
-    body: "Personal shortcuts. /daily-brief. /ghost. /quick-prospect. Each one is a tuned prompt + tool chain, named in your language.",
+    body: "Personal shortcuts. /daily-brief. /quick-prospect. /report. Each one is a tuned prompt + tool chain, named in your language.",
   },
   {
     code: "03",
@@ -27,7 +27,7 @@ const pillars = [
   {
     code: "05",
     name: "Sub-Agents",
-    body: "Specialised workers. A research agent. A writing agent. A reviewer. Each carries its own context, model, and tools — orchestrated from the main loop.",
+    body: "Specialised workers. A research agent. An auditor. A reviewer. Each carries its own context, model, and tools — orchestrated from the main loop.",
   },
   {
     code: "06",
