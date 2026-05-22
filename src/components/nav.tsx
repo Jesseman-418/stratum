@@ -6,6 +6,7 @@ const links = [
   { label: "Tiers", href: "#tiers" },
   { label: "System", href: "#system" },
   { label: "Case", href: "#case" },
+  { label: "Clients", href: "#clients" },
   { label: "Process", href: "#process" },
   { label: "Initiate", href: "#contact" },
 ];

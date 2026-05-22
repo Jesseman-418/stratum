@@ -4,6 +4,7 @@ import { Marquee } from "@/components/marquee";
 import { Tiers } from "@/components/tiers";
 import { System } from "@/components/system";
 import { CaseStudy } from "@/components/case-study";
+import { Clients } from "@/components/clients";
 import { Process } from "@/components/process";
 import { Contact } from "@/components/contact";
 import { Footer } from "@/components/footer";
@@ -18,6 +19,7 @@ export default function Home() {
         <Tiers />
         <System />
         <CaseStudy />
+        <Clients />
         <Process />
         <Contact />
       </main>
