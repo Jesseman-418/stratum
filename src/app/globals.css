@@ -55,6 +55,8 @@ h1, h2, h3, h4 {
   font-feature-settings: "ss01", "ss02", "zero", "ss20", "calt";
   letter-spacing: -0.04em;
   font-weight: 500;
+  text-wrap: balance;
+  line-height: 1.04;
 }
 
 /* Typography utilities — operator console */
