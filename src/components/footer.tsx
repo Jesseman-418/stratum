@@ -7,11 +7,12 @@ export function Footer() {
         <div className="grid md:grid-cols-12 gap-8">
           <div className="md:col-span-5 flex flex-col gap-4">
             <div className="flex items-center gap-2.5">
-              <div className="flex flex-col gap-[3px]">
-                <span className="block h-[2px] w-5 bg-foreground" />
-                <span className="block h-[2px] w-5 bg-foreground/70" />
-                <span className="block h-[2px] w-5 bg-foreground/40" />
-              </div>
+              <img
+                src="/stratum-mark-knockout.svg"
+                alt=""
+                aria-hidden="true"
+                className="h-6 w-6"
+              />
               <span className="text-mono text-sm tracking-[0.2em]">STRATUM</span>
             </div>
             <p className="text-muted text-sm max-w-sm leading-relaxed">

@@ -21,11 +21,12 @@ export function Nav() {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-10 h-14 flex items-center justify-between">
         <a href="#top" className="flex items-center gap-2.5 group">
-          <div className="flex flex-col gap-[3px]">
-            <span className="block h-[2px] w-5 bg-foreground transition-all group-hover:w-6" />
-            <span className="block h-[2px] w-5 bg-foreground/70 transition-all group-hover:w-4" />
-            <span className="block h-[2px] w-5 bg-foreground/40 transition-all group-hover:w-5" />
-          </div>
+          <img
+            src="/stratum-mark-knockout.svg"
+            alt=""
+            aria-hidden="true"
+            className="h-6 w-6 transition-transform group-hover:rotate-3"
+          />
           <span className="text-mono text-sm tracking-[0.2em] font-medium">
             STRATUM
           </span>
