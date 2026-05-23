@@ -49,10 +49,14 @@ body {
 }
 
 /* Display headlines: JetBrains Mono — engineered, sharp, terminal-coded.
-   Stratum is an operator's console; the headlines should look like the prompt. */
-h1, h2, h3, h4 {
-  font-family: var(--font-jb-mono), ui-monospace, monospace;
+   Stratum is an operator's console; the headlines should look like the prompt.
+   !important needed to beat Tailwind v4 utility specificity on font-family inheritance. */
+h1, h2, h3, h4,
+h1 *, h2 *, h3 *, h4 * {
+  font-family: var(--font-jb-mono), ui-monospace, monospace !important;
   font-feature-settings: "ss01", "ss02", "zero", "ss20", "calt";
+}
+h1, h2, h3, h4 {
   letter-spacing: -0.04em;
   font-weight: 500;
   text-wrap: balance;
