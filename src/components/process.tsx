@@ -40,8 +40,8 @@ export function Process() {
           title={
             <>
               Fourteen days from{" "}
-              <span className="italic font-light text-accent">audit</span> to{" "}
-              <span className="italic font-light text-accent">live</span>.
+              <span className="accent-word">audit</span> to{" "}
+              <span className="accent-word">live</span>.
             </>
           }
           description="Stratum is a fixed-scope, fixed-timeline build. No phased ambiguity. No moving targets. Four ordered steps."

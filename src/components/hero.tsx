@@ -43,7 +43,7 @@ export function Hero() {
           The operating layer
           <br />
           beneath your{" "}
-          <span className="italic font-light text-accent">business.</span>
+          <span className="accent-word">business.</span>
         </motion.h1>
 
         {/* subhead */}

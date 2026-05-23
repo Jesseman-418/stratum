@@ -75,7 +75,7 @@ export function Clients() {
           <div className="md:col-span-9 flex flex-col gap-5">
             <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-medium tracking-[-0.025em] leading-[1.05] max-w-3xl">
               One live build.{" "}
-              <span className="italic font-light text-accent">
+              <span className="accent-word">
                 Four more in motion.
               </span>
             </h2>
@@ -296,7 +296,7 @@ function BrowserMockup({ url }: { url: string }) {
         </span>
         <h4 className="relative text-3xl md:text-5xl font-medium tracking-[-0.025em] leading-[1.02] max-w-md">
           Talk to your data.{" "}
-          <span className="italic font-light text-accent">Get answers back.</span>
+          <span className="accent-word">Get answers back.</span>
         </h4>
         <p className="relative text-sm text-muted max-w-sm">
           Built on the Stratum AIOS stack. Shipped end-to-end with the studio.

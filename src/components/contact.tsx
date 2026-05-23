@@ -19,7 +19,7 @@ export function Contact() {
           title={
             <>
               Tell Stratum what your operating layer should{" "}
-              <span className="italic font-light text-accent">do</span>.
+              <span className="accent-word">do</span>.
             </>
           }
           description="Sixty-second intake. You get a personal reply with a free 15-minute Loom teardown of how your workflow would look as an AIOS — within 24 hours."

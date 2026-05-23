@@ -29,7 +29,7 @@ export function CaseStudy() {
           title={
             <>
               The operator&apos;s own{" "}
-              <span className="italic font-light text-accent">AIOS</span>.
+              <span className="accent-word">AIOS</span>.
             </>
           }
           description="Stratum is built by an operator who lives inside the system they sell. The studio's first case study is the studio itself."

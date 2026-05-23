@@ -72,7 +72,7 @@ export function Tiers() {
           eyebrow="Strategic Tiers"
           title={
             <>
-              Three depths of <span className="italic font-light text-accent">build</span>.
+              Three depths of <span className="accent-word">build</span>.
             </>
           }
           description="Stratum scales from a single-skill drop-in to a fully bespoke agent infrastructure. Pick the depth that matches your operator stage."

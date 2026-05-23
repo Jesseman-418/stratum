@@ -45,7 +45,7 @@ export function System() {
           eyebrow="The System"
           title={
             <>
-              Six layers of <span className="italic font-light text-accent">leverage</span>,
+              Six layers of <span className="accent-word">leverage</span>,
               composed into one AIOS.
             </>
           }
@@ -90,7 +90,7 @@ export function System() {
           <p className="md:col-span-9 text-2xl md:text-3xl tracking-tight leading-snug max-w-3xl">
             Software shouldn&apos;t be a place you visit. It should be the layer
             you operate from —{" "}
-            <span className="italic font-light text-accent">
+            <span className="accent-word">
               custom-fit, ambient, and quietly accumulating leverage every day.
             </span>
           </p>
