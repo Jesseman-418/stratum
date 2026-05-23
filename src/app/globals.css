@@ -48,6 +48,15 @@ body {
   color: #0a0a0c;
 }
 
+/* Display headlines: JetBrains Mono — engineered, sharp, terminal-coded.
+   Stratum is an operator's console; the headlines should look like the prompt. */
+h1, h2, h3, h4 {
+  font-family: var(--font-jb-mono), ui-monospace, monospace;
+  font-feature-settings: "ss01", "ss02", "zero", "ss20", "calt";
+  letter-spacing: -0.04em;
+  font-weight: 500;
+}
+
 /* Typography utilities — operator console */
 .text-mono {
   font-family: var(--font-jb-mono), ui-monospace, monospace;
