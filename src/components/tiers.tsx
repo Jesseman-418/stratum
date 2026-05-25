@@ -72,13 +72,88 @@ export function Tiers() {
           eyebrow="Strategic Tiers"
           title={
             <>
-              Three depths of <span className="accent-word">build</span>.
+              One gateway, three depths of{" "}
+              <span className="accent-word">build</span>.
             </>
           }
-          description="Stratum scales from a single-skill drop-in to a fully bespoke agent infrastructure. Pick the depth that matches your operator stage."
+          description="Stratum scales from a sixty-minute Discovery session to a fully bespoke agent infrastructure. Pick the rung that matches your stage."
         />
 
-        <div className="mt-20 grid lg:grid-cols-3 gap-px bg-border hairline-top hairline-bottom">
+        {/* Discovery — rung 0 */}
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+          className="mt-16 md:mt-20 hairline-top hairline-bottom bg-background"
+        >
+          <div className="grid lg:grid-cols-12 gap-6 md:gap-10 p-8 md:p-10">
+            <div className="lg:col-span-3 flex flex-col gap-3">
+              <div className="flex items-center justify-between">
+                <span className="text-mono text-xs text-accent">/T0</span>
+                <span className="text-mono text-[10px] tracking-[0.18em] uppercase text-muted">
+                  60 minutes
+                </span>
+              </div>
+              <h3 className="text-2xl md:text-3xl font-medium tracking-tight">
+                Stratum<span className="text-muted-2"> · </span>
+                <span className="italic font-light">Discovery</span>
+              </h3>
+              <p className="text-sm text-muted">
+                Start here. One hour, your business, my screen.
+              </p>
+            </div>
+
+            <div className="lg:col-span-3 flex flex-col gap-2 justify-center">
+              <div className="flex items-baseline gap-2">
+                <span className="text-mono text-4xl md:text-5xl font-light tracking-tight">
+                  $250
+                </span>
+                <span className="text-mono text-xs text-muted">one-time</span>
+              </div>
+              <p className="text-xs text-muted">
+                Credited toward Lite or Operator if you proceed within 14 days.
+              </p>
+            </div>
+
+            <div className="lg:col-span-4">
+              <p className="label mb-3">What happens</p>
+              <ul className="flex flex-col gap-2 text-sm">
+                {[
+                  "Live audit of your current workflow loops",
+                  "Tactical AIOS sketch — skills, commands, hooks",
+                  "Tier-fit recommendation (or a no, honestly)",
+                  "Recording + notes you keep, no obligation",
+                ].map((it) => (
+                  <li key={it} className="flex items-start gap-3">
+                    <span className="text-accent mt-1">+</span>
+                    <span>{it}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="lg:col-span-2 flex flex-col justify-end gap-3">
+              <p className="label">For</p>
+              <p className="text-sm">Operators sizing up before a build.</p>
+              <a
+                href="https://calendly.com/njessemandevamirtham/stratum-discovery-call"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group mt-2 inline-flex items-center gap-2 text-mono text-xs tracking-[0.18em] uppercase border-b border-foreground/30 pb-1 hover:border-accent hover:text-accent transition-colors"
+              >
+                Book the hour
+                <span className="transition-transform group-hover:translate-x-1">→</span>
+              </a>
+            </div>
+          </div>
+        </motion.div>
+
+        <div className="mt-12 md:mt-16">
+          <p className="label mb-6">Or skip ahead — the three builds</p>
+        </div>
+
+        <div className="grid lg:grid-cols-3 gap-px bg-border hairline-top hairline-bottom">
           {tiers.map((t, i) => (
             <motion.div
               key={t.code}

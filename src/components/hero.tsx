@@ -53,10 +53,11 @@ export function Hero() {
           transition={{ duration: 0.8, ease: easing, delay: 0.4 }}
           className="mt-10 max-w-2xl text-lg md:text-xl text-muted leading-relaxed"
         >
-          Stratum engineers personalized AI operating systems for solo
-          operators — custom Claude Code workspaces tuned to how you
-          actually run your business. Skills. Commands. Hooks. MCP wiring.
-          Quiet leverage that compounds daily.
+          Stop being the bottleneck of your own business. Stratum builds a
+          personal operating system that absorbs the loops you&apos;d rather
+          not run — drafting, prospecting, briefing, scheduling — and gets
+          sharper at them every day. Your time goes back to the work only
+          you can do.
         </motion.p>
 
         {/* CTA row */}
@@ -102,9 +103,9 @@ export function Hero() {
           className="mt-24 grid grid-cols-2 md:grid-cols-4 gap-px bg-border hairline-top"
         >
           {[
-            ["03", "Tiers"],
+            ["04", "Engagements"],
             ["14d", "Avg. build"],
-            ["16", "Active skills"],
+            ["17", "Active skills"],
             ["∞", "Compounding"],
           ].map(([n, l]) => (
             <div

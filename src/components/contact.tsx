@@ -133,6 +133,7 @@ export function Contact() {
                   label="Which tier feels right"
                   name="tier"
                   options={[
+                    "Stratum · Discovery — $250 (1 hr)",
                     "Stratum · Lite — $1,500",
                     "Stratum · Operator — $4,500 + $1K/mo",
                     "Stratum · Studio — $15,000",

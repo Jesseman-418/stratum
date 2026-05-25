@@ -28,36 +28,7 @@ const featured = {
   ],
 };
 
-const pipeline = [
-  {
-    code: "P/002",
-    label: "AI agent founder · NYC",
-    detail: "Pre-launch ops layer + content engine",
-    status: "Audit booked",
-    when: "Week of 2026-05-26",
-  },
-  {
-    code: "P/003",
-    label: "Newsletter operator · 18K subs",
-    detail: "Sunday cloud routine + weekly digest pipeline",
-    status: "Proposal sent",
-    when: "Awaiting countersign",
-  },
-  {
-    code: "P/004",
-    label: "SaaS founder · post-seed",
-    detail: "Founder AIOS — sales, comms, briefs",
-    status: "In discussion",
-    when: "Discovery this week",
-  },
-  {
-    code: "P/005",
-    label: "Creator · 65K on X",
-    detail: "Voice-trained ghostwriting handoff + studio install",
-    status: "Audit complete",
-    when: "Scoping the Operator tier",
-  },
-];
+const cohortSlots = 3;
 
 export function Clients() {
   return (
@@ -76,13 +47,13 @@ export function Clients() {
             <h2 className="text-[clamp(1.75rem,4vw,2.75rem)] font-medium tracking-[-0.025em] leading-[1.05] max-w-3xl">
               One live build.{" "}
               <span className="accent-word">
-                Four more in motion.
+                Founding cohort open.
               </span>
             </h2>
             <p className="text-base md:text-lg text-muted max-w-2xl leading-relaxed">
-              Operator-grade landing sites delivered alongside the AIOS build.
-              The featured project below is live. The pipeline behind it is the
-              current bench.
+              Operator-grade landing sites and AIOS builds, delivered together.
+              The featured project below is live. Three founding-cohort slots
+              remain — first signers lock the studio rate.
             </p>
           </div>
         </div>
@@ -199,53 +170,59 @@ export function Clients() {
           </div>
         </motion.article>
 
-        {/* Pipeline */}
+        {/* Founding cohort */}
         <div className="mt-20 md:mt-28">
           <div className="grid md:grid-cols-12 gap-6 md:gap-10 mb-10">
-            <span className="label md:col-span-3">Current pipeline</span>
+            <span className="label md:col-span-3">Founding cohort</span>
             <p className="md:col-span-9 text-base md:text-lg text-muted max-w-2xl leading-relaxed">
-              Four operators inside the funnel right now. Audit booked through
-              proposal sent. Names redacted until contracts countersign.
+              Stratum is taking on its first three operator-grade builds at
+              founding rate. The slots fill as contracts countersign — no
+              waitlist, no pre-orders.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-px bg-border hairline-top hairline-bottom">
-            {pipeline.map((p, i) => (
-              <motion.div
-                key={p.code}
-                initial={{ opacity: 0, y: 14 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.55, delay: i * 0.06 }}
+          <motion.div
+            initial={{ opacity: 0, y: 14 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.55 }}
+            className="grid md:grid-cols-3 gap-px bg-border hairline-top hairline-bottom"
+          >
+            {Array.from({ length: cohortSlots }).map((_, i) => (
+              <div
+                key={i}
                 className="bg-background p-6 md:p-7 flex flex-col gap-3"
               >
                 <div className="flex items-center justify-between">
                   <span className="text-mono text-[11px] tracking-[0.16em] uppercase text-muted">
-                    /{p.code}
+                    /SLOT 0{i + 1}
                   </span>
                   <span className="flex items-center gap-2">
-                    <span className="block h-1.5 w-1.5 rounded-full bg-muted-2" />
-                    <span className="text-mono text-[10px] tracking-[0.18em] uppercase text-muted">
-                      {p.status}
+                    <span className="block h-1.5 w-1.5 rounded-full bg-accent" />
+                    <span className="text-mono text-[10px] tracking-[0.18em] uppercase text-accent">
+                      Open
                     </span>
                   </span>
                 </div>
 
                 <h4 className="text-xl md:text-2xl font-medium tracking-tight">
-                  {p.label}
+                  Founding rate locked
                 </h4>
-                <p className="text-sm text-muted leading-relaxed">{p.detail}</p>
+                <p className="text-sm text-muted leading-relaxed">
+                  First three contracts hold today&apos;s pricing for the
+                  duration of the engagement. Future tiers re-price upward.
+                </p>
 
                 <div className="mt-auto hairline-top pt-3 flex items-center justify-between text-mono text-[11px] tracking-[0.14em] uppercase text-muted">
                   <span>Window</span>
-                  <span>{p.when}</span>
+                  <span>Through Q3 2026</span>
                 </div>
-              </motion.div>
+              </div>
             ))}
-          </div>
+          </motion.div>
 
           <p className="mt-8 text-mono text-[11px] tracking-[0.16em] uppercase text-muted">
-            Pipeline visible at the prospect&apos;s permission. Specifics on the call.
+            Specifics &amp; scope on the 15-minute discovery call.
           </p>
         </div>
       </div>
